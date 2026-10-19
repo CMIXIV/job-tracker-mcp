@@ -1,0 +1,19 @@
+[project]
+name = "job-tracker-mcp"
+version = "0.1.0"
+description = "A small, read-only MCP server that answers questions about a job-search tracker."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=2.3.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
